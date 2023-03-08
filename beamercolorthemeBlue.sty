@@ -1,0 +1,176 @@
+
+%---------------------------------------------------------------------------
+% COLOUR DEFINITIONS
+
+% Oxford colors
+\definecolor{oxblue}{RGB}{00 21 147}
+\definecolor{visgrey}{RGB}{133 146 151}
+\definecolor{lightblue}{RGB}{212 239 252}
+\definecolor{lightgrey}{RGB}{235 238 238}
+\definecolor{stuttgartgrey}{RGB}{55, 63, 73}
+\definecolor{navy}{RGB}{0 33 71}
+
+% cool support colors
+\definecolor{blue}{RGB}{0 110 175}
+\definecolor{processblue}{RGB}{0 133 202}
+\definecolor{poolblue}{RGB}{12 161 205}
+\definecolor{darkteal}{RGB}{15 130 145}
+\definecolor{seaglass}{RGB}{55 159 159}
+\definecolor{darkgreen}{RGB}{2 137 59}
+\definecolor{kermitgreen}{RGB}{102 164 10}
+\definecolor{lime}{RGB}{169 214 0}
+
+% warm support colors
+\definecolor{tangerine}{RGB}{236 115 0}
+\definecolor{violet}{RGB}{150 0 120}
+\definecolor{red}{RGB}{221 37 1}
+
+
+% ---------------------------------------------------------------------------
+% OBJECT COLOURING
+
+\setbeamercolor{footline1}{fg=white, bg=oxblue}
+\setbeamercolor{footline2}{fg=white, bg=visgrey}
+\setbeamercolor{footline3}{fg=white, bg=white}
+\setbeamercolor{section in head/foot}{fg=stuttgartgrey, bg=stuttgartgrey}
+\setbeamercolor{frametitle}{bg=white, fg=oxblue}
+\setbeamercolor{title}{bg=white, fg=oxblue}
+\setbeamercolor{subtitle}{bg=white, fg=black}
+\setbeamercolor{date}{bg=white, fg=stuttgartgrey}
+    \setbeamercolor{website}{bg=white, fg=oxblue}
+
+\setbeamercolor{block body}{bg=lightgrey}
+\setbeamercolor{block title}{fg=navy, bg=poolblue!60!white}
+
+\setbeamercolor{block body alerted}{bg=lightgrey}
+\setbeamercolor{block title alerted}{fg=black, bg=seaglass}
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=darkgreen}
+\setbeamercolor{example text}{fg=oxblue}
+
+\setbeamercolor{structure}{fg=oxblue}
+
+\setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{background}{parent=background canvas}
+
+
+\useoutertheme[subsection=false]{miniframes} 
+%\useoutertheme[subsection=false]{smoothbars}  #Use this one to have horizontal circles in the slide template, instead of vertical (when using subsections)
+
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]{}
+\useinnertheme{rounded}
+
+\setbeamercolor{item projected}{bg=oxblue}
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{items}[circle]
+
+
+% -------------------------------------------------------------------------
+% TITLE PAGE LAYOUT (adpat as needed / according to preference)
+\setbeamertemplate{title page}
+{
+	\vspace{16pt}	
+	\begin{columns}[b]
+		\column{0.015\textwidth}
+		\column{0.485\textwidth}
+		\begin{beamercolorbox}[left]{institute}
+			\insertinstitute       
+		\end{beamercolorbox}
+		\column{0.4875\textwidth}
+        % \begin{beamercolorbox}[right]{date}
+        % 	\usebeamerfont{date}\insertdate
+        % \end{beamercolorbox}
+        % \vskip1em\par
+	   % \begin{beamercolorbox}[right]{title}
+	   %     \usebeamerfont{author}{author}
+	   % \end{beamercolorbox}
+        \column{0.0125\textwidth}
+    \end{columns}
+    \vspace{20pt}	
+    \vfill
+	
+	\begingroup	 
+	    \begin{beamercolorbox}[center]{title}  % hardcode height with: ht=60pt in box params 
+			\usebeamerfont{title}\Huge\inserttitle
+	    \end{beamercolorbox}
+	    \vskip 3.5em\par
+	    \begin{beamercolorbox}[left]{subtitle}
+	        \usebeamerfont{subtitle}\Large\insertsubtitle
+	    \end{beamercolorbox}
+      \vskip 2em\par
+        \begin{beamercolorbox}[left]{date}
+        	\usebeamerfont{date}\insertdate
+        \end{beamercolorbox}
+     %    \begin{beamercolorbox}[left]{subtitle}
+	    %     \usebeamerfont{subtitle}\insertauthor
+	    % \end{beamercolorbox}
+	    \vskip1em\par
+	    \begin{beamercolorbox}[left]{author}
+	        \usebeamerfont{author}\insertauthor
+	    \end{beamercolorbox}
+	    \vskip 3.5em\par
+	    \begin{columns}[b]
+	    \column{0.01375\textwidth}
+	    \column{0.48625\textwidth}
+	    % \begin{beamercolorbox}[left]{date}
+     %    	\usebeamerfont{date}\insertdate
+     %    \end{beamercolorbox}
+        \column{0.48625\textwidth}
+    %     \begin{beamercolorbox}[right]{title}
+	   %     \usebeamerfont{author}{}
+	   % \end{beamercolorbox}
+	    \column{0.01375\textwidth}
+        \end{columns}
+	\endgroup
+}
+
+
+% -------------------------------------------------------------------------
+% TEMPLATE FOR EACH SLIDE
+\setbeamertemplate{frametitle}
+{
+	\vspace{16pt}	
+  	\hbox{%
+	\begin{beamercolorbox}[wd=.30\paperwidth]{}
+	\scalebox{0.9}{\insertinstitute}
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.75\paperwidth]{frametitle}	
+	\raggedright
+	\hfill
+	\end{beamercolorbox}}%
+	\vspace{6pt}
+	\LARGE{\insertframetitle}
+	\vspace{-10pt}
+} 
+
+
+
+
+% -------------------------------------------------------------------------
+% FOOTER WITH NAVIGATION CIRCLES
+\setbeamertemplate{footline}
+{
+  \vspace{8pt}	 
+  \begin{beamercolorbox}[wd=1\paperwidth,ht=1.6ex,dp=0ex,center]{footline1}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=1\paperwidth,ht=0.4ex,dp=0ex,center]{footline2}
+  \end{beamercolorbox}%
+
+  \begin{beamercolorbox}{bg=lightgrey, fg=oxblue, }
+  \vskip2pt\insertnavigation{\paperwidth}\vskip5pt
+  \end{beamercolorbox}%
+%   \begin{beamercolorbox}[wd=1\paperwidth,ht=0.0ex,dp=3ex,center]{footline3}
+%   \end{beamercolorbox}%  
+}
+
+\setbeamertemplate{headline}{
+%   \begin{beamercolorbox}[wd=1\paperwidth,ht=10ex,dp=3ex,center]{footline1}
+%   \end{beamercolorbox}%  
+}
+
+
+% -------------------------------------------------------------------------
+
