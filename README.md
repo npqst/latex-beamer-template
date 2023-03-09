@@ -8,3 +8,14 @@ This template is designed to be compiled in Overleaf but it can be compiled loca
 
 Wide and narrow templates are supported, and the template includes examples of figures, side-by-side figures and bullet points and tables. 
 
+![image](./example_images/title.png)
+
+![image](./example_images/overview.png)
+
+![image](./example_images/images_with_bullets.png)
+
+![image](./example_images/images.png)
+
+![image](./example_images/table.png)
+
+![image](./example_images/references.png)
