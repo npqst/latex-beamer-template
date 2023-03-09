@@ -18,4 +18,6 @@ Wide and narrow templates are supported, and the template includes examples of f
 
 ![image](./example_images/table.png)
 
+![image](./example_images/numbered_bullets.png)
+
 ![image](./example_images/references.png)
