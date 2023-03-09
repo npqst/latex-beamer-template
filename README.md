@@ -10,7 +10,7 @@ Wide and narrow templates are supported, and the template includes examples of f
 
 ## Usage
 
-1. Download this repository as a *.zip file (a dropdown option under 'clone')
+1. Download this repository as a *.zip file (Code > Download as .zip)
 2. In [Overleaf](https://www.overleaf.com/project) select New Project > Upload a project > Upload the repository zip file
 3. Enjoy making slides with latex! 
 
